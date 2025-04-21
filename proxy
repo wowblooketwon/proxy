@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proxy Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #4CAF50;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 60px);
+      background-color: #ffffff;
+    }
+    iframe {
+      width: 90%;
+      height: 90%;
+      border: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Proxy Site</h1>
+  </header>
+  <main>
+    <iframe src="https://your-proxy-url-here.com" id="proxy-frame"></iframe>
+  </main>
+  <script>
+    // Replace this with your actual proxy URL
+    document.getElementById("proxy-frame").src = "https://your-proxy-url-here.com";
+  </script>
+</body>
+</html>
